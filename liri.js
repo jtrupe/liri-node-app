@@ -28,7 +28,6 @@ const spotifiyThis = function (song) {
         if (err) throw err;
         for (var i = 0; i < data.tracks.items.length; i++) {
             var songData = data.tracks.items[i];
-            // console.log();
             console.log("Title: " + songData.name);
             console.log("Artist: " + songData.artists[0].name);
             console.log("Album: " + songData.album.name);
